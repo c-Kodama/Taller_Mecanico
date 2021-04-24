@@ -1,6 +1,16 @@
 body{
-    background-color: #c4c4d0; padding: 200px; font-family: arial
+    background-color: #c4c4d0; padding: 200px; font-family: arial;
 }
+.boton{
+    background-color: #2A0C4E;
+    border: 1px solid #2e518b;
+    color: white;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
 #menu{
     background-color: #25291c;
 }
@@ -40,4 +50,25 @@ aside{
 }
 ::placeholder{
     font-style: italic;
+}
+
+fieldset{
+    background-color: #006ba6;
+    float: right;
+    padding: 50px;
+    width: 375px;
+    border-radius: 20px;
+    color: white;
+    clear: right;
+
+}
+
+#mecanico {
+    background-color: #006ba6;
+    float: right;
+    padding: 50px;
+    clear: right;
+    border-radius: 20px;
+    width: 375px;
+    color: white;
 }
