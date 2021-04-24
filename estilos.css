@@ -27,25 +27,24 @@ body{
 #menu{
     background-color: #25291c;
 }
-#menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#menu ul li{
-    display: inline-block;
+#menu ul li {
+  display: inline-block;
 }
 
-#menu ul li a{
-    color: ivory;
-    display: block;
-    padding: 10px 100px;
-    text-decoration: none;
+#menu ul li a {
+  color: ivory;
+  display: block;
+  padding: 10px 100px;
+  text-decoration: none;
 }
-#menu ul li a:hover{
-    background-color: #28004f;
-
+#menu ul li a:hover {
+  background-color: #28004f;
 }
 
 #buscador{
@@ -60,8 +59,8 @@ body{
     color: white;
     background-color: #006ba6;
 }
-::placeholder{
-    font-style: italic;
+::placeholder {
+  font-style: italic;
 }
 
 #inicioSesion{
@@ -75,15 +74,30 @@ body{
 }
 
 #mecanico {
-    background-color: #006ba6;
-    float: right;
-    padding: 50px;
-    clear: right;
-    border-radius: 20px;
-    width: 375px;
-    color: white;
+  background-color: #006ba6;
+  float: right;
+  padding: 50px;
+  clear: right;
+  border-radius: 20px;
+  width: 375px;
+  color: white;
 }
-/* Carusel */
+.login h1 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+.buttons {
+  width: 86.6%;
+  height: 40px;
+  background: #006BA6;
+  border: none;
+  color: white;
+  margin-bottom: 16px;
+}
 
 .container{
     margin: auto;
