@@ -1,19 +1,39 @@
 body{
-    background-color: #c4c4d0; padding: 50px; font-family: arial;
+    background-color: #c4c4d0; font-family: arial;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 50%, 200px;
+
+#contacto {
+  background-color: #D6DAEA;
+  float: center;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-bottom: 20px;
 }
 
 #contacto li{
-    padding: 5px;
+  list-style: none;
+  padding: 6px;
+  margin: 10px;
+  text-align: left;
+}
+
+.titulos{
+  font-size: 20;
+  text-align: center;
+  
+}
+#mensajeContacto{
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 0px;
+  background-color: #D6DAEA ;
+  width: 90%;
+
 }
 
 
-#boton{
+.boton{
     background-color: #2A0C4E;
     border: 1px solid #2e518b;
     color: white;
@@ -21,6 +41,10 @@ body{
     border-radius: 10px;
     text-decoration: none;
     height: 35%;
+    width: 15%;
+    float: right;
+    text-align: center;
+
 }
 
 
@@ -31,6 +55,7 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 #menu ul li {
@@ -48,13 +73,12 @@ body{
 }
 
 #buscador{
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
-    padding: 4px;
-    width: 30%;
-    height: 40px;
-    padding-left: 20px;
-    margin-left: 20px;
+    padding: 10px;
+    width: 90%;
+    height: 50px;
+
     font-style: arial;
     color: white;
     background-color: #006ba6;
@@ -64,24 +88,34 @@ body{
 }
 
 #inicioSesion{
-    background-color: #006ba6;
-    float: right;
-    padding: 50px;
-    width: 375px;
-    border-radius: 20px;
-    color: white;
-    clear: right;
+  background-color: #006ba6;
+  float: left;
+  padding: 50px;
+  margin: 5px;
+  width: 90%;
+  border-radius: 10px;
+  color: white;
+  clear: left;
 }
 
 #mecanico {
   background-color: #006ba6;
   float: right;
-  padding: 50px;
+  padding: 5px;
+  margin: 5px;
   clear: right;
-  border-radius: 20px;
-  width: 375px;
-  color: white;
+  border-radius: 10px;
+  width: 90%;
+  color: rgb(12, 6, 6);
 }
+
+.bottom{
+  background-color:#25291C ;
+  text-decoration: none;
+  list-style:none;
+}
+
+
 .login h1 {
   margin: 0;
   text-align: center;
@@ -99,77 +133,7 @@ body{
   margin-bottom: 16px;
 }
 
-.container{
-    margin: auto;
-    width: 700px;
-    padding: 30px;
-    float: left;
-  }
-  
-  ul, li {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-  }
-  
-  ul.slider{
-    position: relative;
-    width: 800px;
-    height: 300px;
-  }
-  
-  ul.slider li {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      opacity: 0;
-      background:white;
-      width: inherit;
-      height: inherit;
-      transition: opacity .5s;
-  }
-  
-  ul.slider li img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-  }
-  ul.slider li label{
-    width: 100%;
-    height: 400px;
-    transition: opacity .5s;
-  }
-  
-  ul.slider li:first-child {
-      opacity: 1;
-  }
-  
-  ul.slider li:target {
-      opacity: 1; 
-  }
-  
-  .botones{
-    text-align: center;
-    margin: 120px;
-  }
-  
-  .botones li{
-    display: inline-block;
-    text-align: center;
-  }
-  
-  .botones li a{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: #28004f;
-    padding: 7px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    font-family: arial;
-    border-radius: 100%;
-  }
+
 
 
 
