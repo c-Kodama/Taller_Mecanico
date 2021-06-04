@@ -18,15 +18,45 @@
     <title>login</title>
   </head>
   <body>
-    <img src="logo.jpg" width="150" height="150" />
-    <div id="menu">
-      <ul>
-        <li><a href="/Index.html">Inicio</a></li>
-        <li><a href="#">Galeria</a></li>
-        <li><a href="#">Atenciones</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </div>
+    <header>
+      <nav class="navbar navbar-expand nav-justified navbar-dark bg-dark">
+        <a class="navbar-brand" href="/Index.html">
+          <img src="/imágenes/logo.jpg" width="75" height="75">
+        </a>
+        <div class="collapse navbar-collapse" id="barraNavegacion">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" aria-current="page" href="/Index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/profesionales.html">Profesionales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/formularioContacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/Categorias.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categorías
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Cambio de Aceite</a>
+                    <a class="dropdown-item" href="#">Frenos</a>
+                    <a class="dropdown-item" href="#">Motor</a>
+                  </div>
+                </li>
+            </ul>
+            
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">O-</button>
+            </form>
+  
+        </div>
+      </nav>
+    </header>
     <!-- Formulario -->
     <section class="form-login main-body">
       <div class="container">
