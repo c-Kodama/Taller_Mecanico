@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mecanicxs/estilos_mecanico.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <title>Trabajos</title>
 </head>
 <body>
+  
+  <!--Barra de navegación-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/Index.html">
-      <img id="logo" src="/imágenes/logo.jpg" width="70" height="70">
+      <img id="logo" src="/imagenes/logo.jpg" width="70" height="70">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion" aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -28,17 +31,27 @@
             Categorías
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Cambio de Aceite</a>
-            <a class="dropdown-item" href="#">Frenos</a>
-            <a class="dropdown-item" href="#">Motor</a>
+            <a class="dropdown-item" href="#">Cajas de cambio</a>
+            <a class="dropdown-item" href="#">Electronica</a>
+            <a class="dropdown-item" href="#">Suspensión y dirección</a>
           </div>
         </div>
       </div>
       <form class="d-flex" id="busqueda">
         <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 m-2" type="submit"><img src="/imágenes/Icon feather-search.png" width="25" height="25"></button>
+        <button class="btn btn-outline-success my-2 my-sm-0 m-2" type="submit"><img src="/imagenes/Icon feather-search.png" width="25" height="25"></button>
       </form>
     </div>
+  </nav>
+
+  <!--Barra de navegación usuarios registrados-->
+  <nav id="sidebar" class="nav nav-tabs flex-column bg-light position-fixed h-100">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link text-dark bg-secondary shadow p-3 m-2 mt-6 active" href="/mecanicxs/mecanicTrabajos.html">Trabajos</a>
+      <a class="nav-item nav-link text-dark shadow p-3 m-2" href="/mecanicxs/form_publicar.html">Publicar</a>
+      <a class="nav-item nav-link text-dark shadow p-3 m-2" href="/mecanicxs/Mecanic.html">Volver</a>
+
+    </div>   
   </nav>
 
 
@@ -48,26 +61,3 @@
 
 </body>
 </html>
-
-
-<nav class="navbar navbar-dark bg-dark navbar-toggleable-sm">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#barraNavegacion" aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">
-    <img src="/imágenes/logo.jpg" width="70" height="70" class="d-inline-block align-top" alt="logo taller mecanico">
-  </a>
-  <div class="collapse navbar-collapse" id="barraNavegacion">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-      <a class="nav-item nav-link" href="#">Disabled</a>
-    </div>
-
-    <form class="d-flex">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-      <button class="btn btn-outline-primary my-2 my-sm-0 m-2" type="submit"></button>
-    </form>
-  </div>
-</nav>

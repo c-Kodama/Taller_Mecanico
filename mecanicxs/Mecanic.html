@@ -10,9 +10,10 @@
     <title>Index Mecanico</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!--Barra de navegación-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="/Index.html">
-      <img id="logo" src="/imágenes/logo.jpg" width="70" height="70">
+      <img id="logo" src="/imagenes/logo.jpg" width="70" height="70">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barraNavegacion" aria-controls="barraNavegacion" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -29,18 +30,30 @@
             Categorías
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Cambio de Aceite</a>
-            <a class="dropdown-item" href="#">Frenos</a>
-            <a class="dropdown-item" href="#">Motor</a>
+            <a class="dropdown-item" href="#">Cajas de cambio</a>
+            <a class="dropdown-item" href="#">Electronica</a>
+            <a class="dropdown-item" href="#">Suspensión y dirección</a>
           </div>
         </div>
       </div>
       <form class="d-flex" id="busqueda">
         <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 m-2" type="submit"><img src="/imágenes/Icon feather-search.png" width="25" height="25"></button>
+        <button class="btn btn-outline-success my-2 my-sm-0 m-2" type="submit"><img src="/imagenes/Icon feather-search.png" width="25" height="25"></button>
       </form>
     </div>
   </nav>
+  
+  <!--Barra de navegación de usuarios registrados-->
+  <nav id="sidebar" class="nav nav-tabs flex-column bg-light position-fixed h-100">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link text-dark shadow p-3 m-2 mt-6" href="/mecanicxs/mecanicTrabajos.html">Trabajos</a>
+      <a class="nav-item nav-link text-dark shadow p-3 m-2" href="/mecanicxs/form_publicar.html">Publicar</a>
+      <a class="nav-item nav-link text-dark shadow p-3 m-2" href="/mecanicxs/Mecanic.html">Volver</a>
+
+    </div>   
+  </nav>
+
+  
 
   
 
