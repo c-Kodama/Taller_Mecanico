@@ -30,21 +30,34 @@
         })
       })
 
-      /*Traer los datos de la api para marca*/
       $(document).ready(function(){
-        $("#marca").focus(function(){
-
           var url="https://vpic.nhtsa.dot.gov/api/vehicles/GetMakesForVehicleType/car?format=json"
-
-          $.get(url, function(data){
-            $.each(data.Results, function(i, elemento){
-              console.log(elemento.MakeName);
-              $("#marca").append('<option name=>'+elemento.MakeName+'</option')
+          var urlModelos="https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformake/honda?format=json"
+          var marcaSeleccionada = ""
+          //Traer los datos de la api para marca
+          $("#marca").focus(function(){
+            $.get(url, function(data){
+              //Funcion para agregar los registros de la api al selector de marca
+              $.each(data.Results, function(i, elemento){
+                $("#marca").append('<option name=>'+elemento.MakeName+'</option>')
+              })
+              //Funcion para obtener la marca seleccionado
+              $("#marca").change(function(){
+                marcaSeleccionada = $("#marca").val()
+                console.log(marcaSeleccionada)
+              })
             })
-
+          })
+          $("#modelo").focus(function(){
+            $.get(urlModelos, function(data){
+              //Agregar modelos al selector de modelo
+              $.each(data.Results, function(i, elemento){
+                $("#modelo").append('<option name=>'+elemento.Model_Name+'</option>')
+              })
+              console.log(marcaSeleccionada)
+            })
           })
 
-        })
       })
 
     </script>
@@ -110,13 +123,15 @@
                 <!--Input para marca-->
                 <div class="col-sm-6 form-group">
                   <label for="marca" class="form-label">Marca</label>
-                  <select class="form-select" aria-label="marca" id="marca" ></select>
+                  <select class="form-select" aria-label="marca" id="marca" >
+                    <option selected id="opcionSeleccionada"></option>
+                  </select>
                 </div>
                 <!--Input para modelo-->
                 <div class="col-sm-6 form-group">
                   <label for="modelo" class="form-label">Modelo</label>
                   <select class="form-select" aria-label="modelo" id="modelo" >
-                    <option id="opcionesMarca"></option>
+                    
                   </select>
                 </div>
               </div>
